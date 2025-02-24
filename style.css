@@ -1,0 +1,87 @@
+:root {
+    --orange: #fb7413;
+    --white: #ffffff;
+    --light-grey: #959eac;
+    --dark-blue: #262e38;
+    --very-dark-blue: #131518;
+    --radial-gradient: radial-gradient(circle, #232a34 0%, #181e27 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", serif;
+}
+
+img {
+    inline-size: 100%;
+    block-size: auto;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    display: grid;
+    place-items: center;
+    min-block-size: 100vh;
+}
+
+.main-container {
+    max-inline-size: 327px;
+    inline-size: 100%;
+    background: var(--radial-gradient);
+    border-radius: 15px;
+    padding: 24px;
+}
+
+.main-container__img-container {
+    inline-size: 40px;
+    block-size: 40px;
+    display: grid;
+    place-items: center;
+    padding: 13px;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    margin-block-end: 16px;
+}
+
+.main-container__title {
+    font-size: 24px;
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+
+.main-container__subtitle {
+    font-size: 14px;
+    line-height: 1.572;
+    margin-block-end: 24px;
+    color: var(--light-grey);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    inline-size: 100%;
+    gap: 24px;
+    justify-content: space-between;
+}
+
+.form__btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__btns button {
+    inline-size: 42px;
+    block-size: 42px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--dark-blue);
+    color: var(--light-grey);
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
