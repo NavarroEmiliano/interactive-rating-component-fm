@@ -13,53 +13,56 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
-  
+
+  <script defer src="index.js"></script>
+
   <title>Interactive rating component</title>
 
 </head>
 
 <body>
 
-  <!-- Rating state start -->
 
   <main class="main-container">
-    <div class="main-container__img-container">
-      <img src="images/icon-star.svg" alt="Image of a star">
-    </div>
-    <h1 class="main-container__title">
-      How did we do?
-    </h1>
-
-    <p class="main-container__subtitle">
-      Please let us know how we did with your support request. All feedback is appreciated
-      to help us improve our offering!
-    </p>
-
-    <form class="form">
-      <div class="form__btns">
-        <button class="btn-active">1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
+    <div class="main-container__vote hidden">
+      <div class="vote__img-container">
+        <img src="images/icon-star.svg" alt="Image of a star">
       </div>
-      <button class="form_submit-btn" type="submit">Submit</button>
-    </form>
+      <h1 class="vote__title">
+        How did we do?
+      </h1>
+
+      <p class="vote__subtitle">
+        Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!
+      </p>
+
+      <form class="form">
+        <div class="form__btns">
+          <button class="vote-btn active">1</button>
+          <button class="vote-btn">2</button>
+          <button class="vote-btn">3</button>
+          <button class="vote-btn">4</button>
+          <button class="vote-btn">5</button>
+        </div>
+        <button class="form_submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="main-container__thanks">
+      <img src="images/illustration-thank-you.svg" alt="Mobile image">
+      <p class="thanks__selected-text">You selected<span class="selected-number"></span> out of 5</p>
+      <div class="thanks__text">
+        <p class="text__title">
+          Thank you!
+        </p>
+        <p class="text__subtitle">
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
   </main>
-
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-<!--   You selected <!-- Add rating here  out of 5 -->
-<!-- 
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
 
 </body>
 

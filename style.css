@@ -34,7 +34,11 @@ body {
     padding: 24px;
 }
 
-.main-container__img-container {
+.hidden {
+    display: none;
+}
+
+.vote__img-container {
     inline-size: 40px;
     block-size: 40px;
     display: grid;
@@ -45,14 +49,14 @@ body {
     margin-block-end: 16px;
 }
 
-.main-container__title {
+.vote__title {
     font-size: 24px;
     color: var(--white);
     font-weight: 700;
     margin-bottom: 17px;
 }
 
-.main-container__subtitle {
+.vote__subtitle {
     font-size: 14px;
     line-height: 1.572;
     margin-block-end: 24px;
@@ -93,7 +97,7 @@ body {
     transition: all 100ms ease-in;
 }
 
-.form__btns .btn-active {
+.form__btns .active {
     background-color: var(--orange);
     color: var(--very-dark-blue);
 }
@@ -119,4 +123,26 @@ body {
     transition: all 100ms ease-in;
 }
 
+.main-container__thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.main-container__thanks img {
+    inline-size: 144px;
+}
+
+.thanks__selected-text {
+    background-color: var(--dark-blue);
+    color: var(--orange);
+    padding-inline: 12px;
+    border-radius: 22.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 32px;
+    padding-block-start: 2px;
+}
 
