@@ -4,7 +4,7 @@
     --light-grey: #959eac;
     --dark-blue: #262e38;
     --very-dark-blue: #131518;
-    --radial-gradient: radial-gradient(circle, #232a34 0%, #181e27 100%);
+    --radial-gradient: radial-gradient(at center top, #232a34 , #181e27 );
 }
 
 * {
@@ -30,6 +30,7 @@ body {
 .main-container {
     max-inline-size: 412px;
     inline-size: 100%;
+    background-color: var(--dark-blue);
     background: var(--radial-gradient);
     border-radius: 15px;
     padding: clamp(24px, 5vw, 32px);
