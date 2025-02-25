@@ -4,7 +4,7 @@
     --light-grey: #959eac;
     --dark-blue: #262e38;
     --very-dark-blue: #131518;
-    --radial-gradient: radial-gradient(at center top, #232a34 , #181e27 );
+    --radial-gradient: radial-gradient(at center top, #232a34, #181e27);
 }
 
 * {
@@ -32,7 +32,7 @@ body {
     inline-size: 100%;
     background-color: var(--dark-blue);
     background: var(--radial-gradient);
-    border-radius: 15px;
+    border-radius: clamp(15px, 5vw, 30px);
     padding: clamp(24px, 5vw, 32px);
 }
 
@@ -42,7 +42,7 @@ body {
     block-size: clamp(40px, 5vw, 48px);
     display: grid;
     place-items: center;
-    padding: 13px;
+    padding:clamp(13px, 10px + 2vw ,15px);
     background-color: var(--dark-blue);
     border-radius: 50%;
     margin-block-end: clamp(16px, 5vw, 30px);
@@ -195,6 +195,7 @@ body {
     background-color: red;
     animation: vibrar 0.2s ease-in-out 3;
 }
+
 .error:hover {
     background-color: red;
 }
