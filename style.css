@@ -87,6 +87,7 @@ body {
     background-color: var(--white);
     color: var(--dark-blue);
     transition: all 100ms ease-in;
+    cursor: pointer;
 }
 
 .form__btns .active {
@@ -115,6 +116,7 @@ body {
 .form_submit-btn:hover {
     background-color: var(--white);
     transition: all 100ms ease-in;
+    cursor: pointer;
 }
 
 .main-container__thanks {
